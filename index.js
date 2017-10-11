@@ -22,8 +22,6 @@ function addToCart(item) {
 function viewCart() {
 
   var results = []                                            //the string answers
-  var currentObject
-  var keyArray
   var itemName
   var itemPrice
 
@@ -40,7 +38,6 @@ function viewCart() {
     for (let i = 0; i < cart.length; i++){                    //iterate thru the cart
       itemName = Object.keys(cart[i])[0]
       itemPrice = cart[i][itemName]
-      
 
       if(0 < i < (cart.length - 1)){                          //if last item
         results[i] = `and ${itemName} at $${itemPrice}.`
