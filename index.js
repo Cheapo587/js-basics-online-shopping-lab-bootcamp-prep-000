@@ -21,31 +21,31 @@ function addToCart(item) {
 
 function viewCart() {
 
-  var results = []                                            //the string answers
+  var results = []                                                              //the string answers
   var itemName
   var itemPrice
 
-  if (cart === []){                                           //if the cart is empty...
-    console.log("Your shopping cart is empty.")
+  if (cart === []){                                                             //if the cart is empty...
+    console.log("Your shopping cart is empty.") 
     return
-  } else if (cart.length === 1){                              //if only 1 item
+  } else if (cart.length === 1){                                                //if only 1 item
     itemName = Object.keys(cart[0])[0]
     itemPrice = cart[0][itemName]
     console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
     return
-  } else {                                                    //2 or more items in the cart...
+  } else {                                                                      //2 or more items in the cart...
 
-    for (let i = 0; i < cart.length; i++){                    //iterate thru the cart
-      itemName = Object.keys(cart[i])[0]
-      itemPrice = cart[i][itemName]
-
-      if(0 < i < (cart.length - 1)){                          //if last item
+    for (let i = 0; i < cart.length; i++){                                      //iterate thru the cart
+      itemName = Object.keys(cart[i])[0]                                        //get the item name
+      itemPrice = cart[i][itemName]                                             //get the item price
+      
+      //add the appropriate strings:
+      if(i === cart.length - 1){                                                //if last item
         results[i] = `and ${itemName} at $${itemPrice}.`
-      } else {                                                //otherwise
-        results[i] = `${itemName} at $${itemPrice}`
-      }
+      } else {
+        results[i] = `${itemName} at ${itemPrice}`
+      }//end for if-else
     }//end for loop
-
     console.log("In your cart, you have " + results.join(", "))
     return
   }//end 2+ item cart else
