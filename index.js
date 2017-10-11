@@ -54,7 +54,7 @@ function viewCart() {
         results[i] = `${itemName} at ${itemPrice}`
       }//end for if-else
     }//end for loop
-    console.log("In your cart, you have " + results.join(, ))
+    console.log("In your cart, you have " + results.join(", ""))
     return
   }//end 3+ item cart else
 }//end viewCart() function
