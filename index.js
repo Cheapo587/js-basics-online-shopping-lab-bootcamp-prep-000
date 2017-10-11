@@ -25,7 +25,7 @@ function viewCart() {
   var itemName
   var itemPrice
 
-  if (cart.length < 1]){                                                             //if the cart is empty...
+  if (cart.length < 1){                                                         //if the cart is empty...
     console.log("Your shopping cart is empty.")
     return
   } else if (cart.length === 1){                                                //if only 1 item
