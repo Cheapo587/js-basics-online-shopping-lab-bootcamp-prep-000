@@ -23,7 +23,7 @@ function viewCart() {
   var results = []                                                              //array of strings
   var itemName
   var itemPrice
-  
+
   if (cart.length < 1){                                                         //if the cart is empty...
     console.log("Your shopping cart is empty.")
     return
@@ -41,10 +41,10 @@ function viewCart() {
     var item2Price = cart[1][itemName]
     console.log(`In your cart, you have ${itemName} at $${itemPrice} and ${item2} at $${item2Price}.`)
     return
-    
+
   } else {                                                                      //3+ items
     for (let i = 0; i < cart.length; i++){                                      //iterate thru the cart
-      
+
       itemName = Object.keys(cart[i])[0]                                        //get the item name
       itemPrice = cart[i][itemName]                                             //get the item price
       //add the appropriate strings:
