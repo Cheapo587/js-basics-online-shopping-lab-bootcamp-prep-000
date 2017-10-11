@@ -21,13 +21,13 @@ function addToCart(item) {
 
 function viewCart() {
 
-  var results= []
+  var results = []                                            //the string answers
   var currentObject
   var keyArray
   var itemName
   var itemPrice
 
-  if (cart.length < 1){                                       //if the cart is empty...
+  if (cart === []){                                           //if the cart is empty...
     console.log("Your shopping cart is empty.")
     return
   } else if (cart.length === 1){                              //if only 1 item
@@ -55,7 +55,7 @@ function viewCart() {
     console.log("In your cart, you have " + results.join(", "))
     return
   }//end 2+ item cart else
-}//end viewCart() function
+}//end viewCart() function]
 
 function total(cart) {
 
