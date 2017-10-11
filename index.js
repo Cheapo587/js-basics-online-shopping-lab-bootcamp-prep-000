@@ -38,7 +38,7 @@ function viewCart() {
     itemName = Object.keys(cart[0])[0]
     itemPrice = cart[0][itemName]
     var item2 = Object.keys(cart[1])[0]
-    var item2Price = cart[1][itemName]
+    var item2Price = cart[1][item2]
     console.log(`In your cart, you have ${itemName} at $${itemPrice} and ${item2} at $${item2Price}.`)
     return
 
