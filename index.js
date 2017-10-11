@@ -31,19 +31,16 @@ function viewCart() {
     console.log("Your shopping cart is empty.")
     return
   } else if (cart.length === 1){                              //if only 1 item
-    currentObject = cart[0]                                   //get the object
-    keyArray = Object.keys(currentObject)                     //get an array of keys of the current object
-    itemName = keyArray[0]                                    //get the name
-    itemPrice = currentObject[itemName]                       //get the price
+    itemName = Object.keys(cart[0])[0]
+    itemPrice = cart[0][itemName]
     console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
     return
-  } else {                                                    //otherwise (2+ item cart else)
+  } else {                                                    //2 or more items in the cart...
 
     for (let i = 0; i < cart.length; i++){                    //iterate thru the cart
-      currentObject = cart[i]                                 //get the object at the current index
-      keyArray = Object.keys(currentObject)                   //get the key(s) associated with the current object
-      itemName =  keyArray[0]                                 //get the name from the array
-      itemPrice = currentObject[itemName]                     //get the price
+      itemName = Object.keys(cart[i])[0]
+      itemPrice = cart[i][itemName]
+      
 
       if(0 < i < (cart.length - 1)){                          //if last item
         results[i] = `and ${itemName} at $${itemPrice}.`
