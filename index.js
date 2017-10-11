@@ -28,12 +28,13 @@ function viewCart() {
   if (cart.length < 1){                                                         //if the cart is empty...
     console.log("Your shopping cart is empty.")
     return
+    
   } else if (cart.length === 1){                                                //if only 1 item
     itemName = Object.keys(cart[0])[0]
     itemPrice = cart[0][itemName]
     console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
     return
-
+    
   } else if (cart.length === 2) {                                               //if 2 item cart
     itemName = Object.keys[cart[0]][0]
     itemPrice = cart[0][itemName]
