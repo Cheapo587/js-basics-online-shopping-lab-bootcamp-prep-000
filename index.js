@@ -34,6 +34,15 @@ function viewCart() {
     console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
     return
 
+  } else if (cart.length === 2) {                                               //if 2 item cart
+    itemName = Object.keys[cart[0]][0]
+    itemPrice = cart[0][itemName]
+    var item2 = Object.keys(cart[1])[0]
+    var item2Price = cart[1][itemName]
+    console.log(`In your cart, you have ${itemName} at $${itemPrice} and ${item2} at $${item2Price}.`)
+    return
+  }
+
   //CORRECT UNTIL THIS POINT
   } else {                                                                      //2 or more items in the cart...
 
