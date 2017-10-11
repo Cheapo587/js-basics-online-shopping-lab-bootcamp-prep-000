@@ -69,8 +69,8 @@ function total(cart) {
     itemName = Object.keys(cart[i])[0]                                          //get the item name
     itemPrice = cart[i][itemName]                                               //get the item price
 
-    price += itemPrice
-    
+    price += itemPrice                                                          //add to the total
+
   }
 
 }
