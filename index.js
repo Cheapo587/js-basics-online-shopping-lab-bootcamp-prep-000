@@ -46,7 +46,7 @@ function viewCart() {
       //add the appropriate strings:
       if(i === cart.length - 1){                                                //if last item
         results[i] = ` and ${itemName} at $${itemPrice}.`
-      } else {
+      } else {                                                                   //otherwise
         results[i] = ` ${itemName} at ${itemPrice}`
       }//end for if-else
     }//end for loop
