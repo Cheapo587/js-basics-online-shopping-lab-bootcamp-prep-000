@@ -70,8 +70,8 @@ function total() {
     itemPrice = cart[i][itemName]                                               //get the item price
 
     price += itemPrice                                                          //add to the total
-
   }
+  return price
 
 }
 
