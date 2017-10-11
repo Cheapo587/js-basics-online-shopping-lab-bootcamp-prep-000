@@ -61,7 +61,7 @@ function viewCart() {
 
 function total() {
 
-  var price
+  var price = 0
   var itemName
   var itemPrice
 
