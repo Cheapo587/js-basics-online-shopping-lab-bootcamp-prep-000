@@ -59,7 +59,7 @@ function viewCart() {
   }//end 3+ item cart else
 }//end viewCart() function
 
-function total(cart) {
+function total() {
 
   var price
   var itemName
