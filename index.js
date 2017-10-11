@@ -52,7 +52,7 @@ function viewCart() {
     console.log("In your cart, you have " + results.toString())
     return
   }//end 2+ item cart else
-}//end viewCart() function]
+}//end viewCart() function
 
 function total(cart) {
 
