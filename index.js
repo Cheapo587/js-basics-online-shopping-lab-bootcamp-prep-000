@@ -61,22 +61,15 @@ function viewCart() {
 
 function total(cart) {
 
-  var totalPrice = 0
-
-  var currentObject
-  var keyArray
+  var price
   var itemName
   var itemPrice
 
-  for(let i = 0; i < cart.length; i++){
-    currentObject = cart[i]
-    keyArray = Object.keys(currentObject)
-    itemName = keyArray[0]
-    itemPrice = currentObject[itemName]
-    totalPrice += parseInt(itemPrice)
-  }//end for
-  return totalPrice
-}//end function
+  for(let i = 0; i < cart.length; i++){                                         //iterate thru the cart
+    
+  }
+
+}
 
 function removeFromCart(item) {
 
