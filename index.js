@@ -47,10 +47,10 @@ function viewCart() {
       if(i === cart.length - 1){                                                //if last item
         results[i] = `and ${itemName} at $${itemPrice}.`
       } else {
-        results[i] = `${itemName} at ${itemPrice}`
+        results[i] = `${itemName} at ${itemPrice}, `
       }//end for if-else
     }//end for loop
-    console.log("In your cart, you have " + results.join(", "))
+    console.log("In your cart, you have " + results)
     return
   }//end 2+ item cart else
 }//end viewCart() function]
