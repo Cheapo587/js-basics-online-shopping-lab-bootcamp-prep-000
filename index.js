@@ -35,7 +35,7 @@ function viewCart() {
     return
 
   } else if (cart.length === 2) {                                               //if 2 item cart
-    itemName = Object.keys[cart[0]][0]
+    itemName = Object.keys(cart[0])[0]
     itemPrice = cart[0][itemName]
     var item2 = Object.keys(cart[1])[0]
     var item2Price = cart[1][itemName]
