@@ -36,8 +36,10 @@ function viewCart() {
 
   //CORRECT UNTIL THIS POINT
   } else {                                                                      //2 or more items in the cart...
-
+    //[bananas 17, apples 5]
+    //[index0elem1, index1,elem2], length is 2
     for (let i = 0; i < cart.length; i++){                                      //iterate thru the cart
+      //assuming these statements are correct
       itemName = Object.keys(cart[i])[0]                                        //get the item name
       itemPrice = cart[i][itemName]                                             //get the item price
 
