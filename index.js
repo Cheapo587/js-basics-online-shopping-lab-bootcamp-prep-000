@@ -26,7 +26,7 @@ function viewCart() {
   var itemPrice
 
   if (cart === []){                                                             //if the cart is empty...
-    console.log('Your shopping cart is empty.')
+    console.log("Your shopping cart is empty.")
     return
   } else if (cart.length === 1){                                                //if only 1 item
     itemName = Object.keys(cart[0])[0]
