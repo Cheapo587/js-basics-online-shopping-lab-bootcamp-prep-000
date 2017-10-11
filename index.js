@@ -33,6 +33,8 @@ function viewCart() {
     itemPrice = cart[0][itemName]
     console.log(`In your cart, you have ${itemName} at $${itemPrice}.`)
     return
+
+  //CORRECT UNTIL THIS POINT
   } else {                                                                      //2 or more items in the cart...
 
     for (let i = 0; i < cart.length; i++){                                      //iterate thru the cart
