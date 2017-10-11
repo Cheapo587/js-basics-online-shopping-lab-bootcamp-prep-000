@@ -109,7 +109,7 @@ function placeOrder(cardNumber) {
     return
   } else {                                                                      //otherwise
     var finalTotal = total(cart)                                                //get the total and print the statement
-    console.log(`Your total cost is $${finalTotal}, which will be charged to the card ${cardNumber}`)
+    console.log(`Your total cost is $${finalTotal}, which will be charged to the card ${cardNumber}.`)
     cart = []                                                                   //and empty the cart
     return
   }//end if-else
